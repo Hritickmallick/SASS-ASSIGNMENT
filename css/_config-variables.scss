@@ -1,0 +1,28 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Ubuntu';
+}
+
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0px 30px;
+}
+
+$text-color-1:#040b3b;
+$text-color-2: #fff;
+$bckgrnd-color: #e6f6ff;
+$footer-color: #1f2327;
+
+@mixin flex-wrap($direction) {
+    display: flex;
+    align-items: center;
+    flex-direction: $direction;
+}
+
+.footer-box-col{
+    width: 100%;
+    text-align: center;
+}

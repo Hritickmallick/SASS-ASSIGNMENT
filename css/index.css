@@ -1,0 +1,246 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Ubuntu";
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0px 30px;
+}
+
+.footer-box-col {
+  width: 100%;
+  text-align: center;
+}
+
+.section-navigation {
+  background-color: #e6f6ff;
+}
+
+.navigation {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.navigation .navigation-logo {
+  margin-right: auto;
+}
+.navigation .navigation-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  list-style-type: none;
+}
+.navigation .navigation-list a {
+  text-decoration: none;
+  color: #040b3b;
+  display: inline-block;
+  padding: 0px 15px;
+}
+
+.section-banner {
+  position: relative;
+  background-color: #040b3b;
+}
+.section-banner .banner {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+.section-banner .banner .banner-main-row {
+  width: 50%;
+}
+
+.banner-main-row-1 {
+  background-color: #040b3b;
+}
+
+.banner-main-row-1::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: repeating-conic-gradient(rgba(0, 0, 0, 0) 0.000005%, #040b3b 0.00005%);
+  mix-blend-mode: overlay;
+}
+
+.banner-row-content {
+  position: absolute;
+  top: 120px;
+  left: 30%;
+}
+
+.image-noise {
+  background: url(../images/banner-img.jpg);
+  background-size: cover;
+  background-position: center;
+  height: 400px;
+  margin-left: auto;
+  position: relative;
+  z-index: 2;
+  opacity: 0.8;
+}
+
+.banner-header {
+  font-size: 40px;
+  color: #fff;
+}
+
+.banner-header::after {
+  content: "";
+  display: inline-block;
+  width: 450px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.banner-header-2 {
+  font-size: 40px;
+  color: #fff;
+}
+
+.banner-header-2::after {
+  content: "";
+  display: inline-block;
+  width: 450px;
+  height: 5px;
+  background-color: #fff;
+}
+
+.banner-content {
+  color: #fff;
+  font-size: 30px;
+}
+
+.banner-row-1 {
+  z-index: 1;
+  -webkit-text-fill-color: #fff;
+  -webkit-text-stroke-width: 1px;
+}
+
+.banner-row-2 {
+  z-index: 3;
+  -webkit-text-fill-color: transparent;
+  -webkit-text-stroke-width: 1px;
+}
+
+.section-client {
+  background-color: #e6f6ff;
+}
+
+.client-header {
+  text-align: center;
+  -webkit-text-stroke-width: 2px;
+  text-align: center;
+  font-size: 45px;
+  color: #040b3b;
+  padding: 20px 0px;
+}
+
+.client-box {
+  padding-bottom: 40px;
+}
+
+.client-list {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
+
+.client {
+  width: 25%;
+  text-align: center;
+}
+
+.logo {
+  max-width: 50%;
+}
+
+.section-footer {
+  background-color: #1f2327;
+}
+
+.footer-box {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding: 25px 0px;
+}
+
+.footer-box-col {
+  width: 50%;
+}
+
+.subscription-header {
+  font-size: 40px;
+  color: #fff;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.subscription-content {
+  font-size: 25px;
+  color: #797676;
+  text-align: left;
+  padding-bottom: 15px;
+}
+
+.subscription-email-box {
+  text-align: left;
+  padding: 20px 0px;
+}
+.subscription-email-box p {
+  display: block;
+  color: #fff;
+  padding-bottom: 15px;
+}
+.subscription-email-box #my-email {
+  padding: 5px 0px;
+  background-color: #1f2327;
+  border: 1px solid #fff;
+  outline-style: none;
+  color: #fff;
+}
+.subscription-email-box button {
+  padding: 5px 25px;
+  background-color: #797676;
+  border: 1px solid transparent;
+  color: #fff;
+  border-radius: 5px;
+  margin-left: 2px;
+}
+
+.footer-box-col-row ul {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  padding-left: 150px;
+}
+.footer-box-col-row ul li {
+  margin: 0px 5px;
+}
+.footer-box-col-row ul li a {
+  display: inline-block;
+  color: #fff;
+  padding: 5px 10px;
+}
+
+.facebook-link {
+  background-color: #3b5998;
+}
+
+.insta-link {
+  background: rgb(131, 58, 180);
+  background: linear-gradient(90deg, rgb(131, 58, 180) 0%, rgb(253, 29, 29) 56%, rgb(252, 176, 69) 99%);
+}
+
+.linked-in-link {
+  background-color: #04045b;
+}
+
+.twitter-link {
+  background-color: #0bb6ef;
+}/*# sourceMappingURL=index.css.map */

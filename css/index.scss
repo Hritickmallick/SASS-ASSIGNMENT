@@ -1,0 +1,231 @@
+@import 'config-variables';
+
+
+.section-navigation{
+    background-color: $bckgrnd-color;
+}
+
+.navigation {
+    @include flex-wrap(row);
+
+    .navigation-logo {
+        margin-right: auto;
+    }
+
+    .navigation-list {
+        @include flex-wrap(row);
+        list-style-type: none;
+
+        a {
+            text-decoration: none;
+            color: $text-color-1;
+            display: inline-block;
+            padding: 0px 15px;
+        }
+    }
+}
+
+.section-banner{
+    position: relative;
+    background-color: #040b3b;
+
+.banner {
+    @include flex-wrap(row);
+
+    .banner-main-row {
+        width: 50%;
+    }
+}
+}
+
+.banner-main-row-1{
+    background-color: #040b3b;
+}
+
+.banner-main-row-1::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(#0000 0.000005%, #040b3b 0.00005%);
+    mix-blend-mode: overlay;
+}
+
+.banner-row-content{
+    position: absolute;
+    top: 120px;
+    left: 30%;
+   }
+
+.image-noise {
+    background: url(../images/banner-img.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 400px;
+    margin-left: auto;
+    position: relative;
+    z-index: 2;
+    opacity: 0.8;
+}
+
+.banner-header {
+    font-size: 40px;
+    color: $text-color-2;
+}
+
+.banner-header::after {
+    content: "";
+    display: inline-block;
+    width: 450px;
+    height: 5px;
+    background-color: $text-color-2;
+}
+
+.banner-header-2{
+    font-size: 40px;
+    color: $text-color-2;
+}
+
+.banner-header-2::after {
+    content: "";
+    display: inline-block;
+    width: 450px;
+    height: 5px;
+    background-color: $text-color-2;
+}
+
+.banner-content{
+    color: $text-color-2;
+    font-size: 30px;
+}
+
+.banner-row-1{
+    z-index: 1;
+    -webkit-text-fill-color: $text-color-2;
+    -webkit-text-stroke-width: 1px;
+}
+
+.banner-row-2{
+    z-index: 3;
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke-width: 1px;
+}
+
+.section-client{
+    background-color: $bckgrnd-color;
+}
+
+.client-header{
+    text-align: center;
+    -webkit-text-stroke-width: 2px;
+    text-align: center;
+    font-size: 45px;
+    color: $text-color-1;
+    padding: 20px 0px;
+}
+
+.client-box{
+    padding-bottom: 40px;
+}
+
+.client-list{
+    @include flex-wrap(row);
+}
+
+.client{
+    width: 25%;
+    text-align: center;
+}
+
+.logo{
+    max-width: 50%;
+}
+
+.section-footer{
+    background-color: $footer-color;
+}
+
+.footer-box{
+    @include flex-wrap(row);
+    padding: 25px 0px;
+}
+
+.footer-box-col{
+    width: 50%;
+}
+
+.subscription-header{
+    font-size: 40px;
+    color: $text-color-2;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.subscription-content{
+    font-size: 25px;
+    color: #797676;
+    text-align: left;
+    padding-bottom: 15px;
+}
+
+.subscription-email-box{
+    text-align: left;
+    padding: 20px 0px;
+
+    p{
+        display:block;
+        color: $text-color-2;
+        padding-bottom: 15px;
+    }
+
+    #my-email{
+        padding: 5px 0px;
+        background-color: #1f2327;
+        border: 1px solid $text-color-2;
+        outline-style: none;
+        color: $text-color-2;
+    }
+
+    button{
+        padding: 5px 25px;
+        background-color: #797676;
+        border:1px solid transparent;
+        color: $text-color-2;
+        border-radius: 5px;
+        margin-left: 2px;
+    }
+}
+
+.footer-box-col-row{
+ul{
+    list-style-type: none;
+    @include flex-wrap(row);
+    padding-left: 150px;
+
+    li{
+        margin: 0px 5px;
+       
+        a{
+            display: inline-block;
+            color: #fff;
+            padding: 5px 10px;
+        }
+    }
+}
+}
+
+.facebook-link{
+    background-color:#3b5998;
+}
+
+.insta-link{
+    background: rgb(131,58,180);
+    background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 56%, rgba(252,176,69,1) 99%);
+}
+
+.linked-in-link{
+    background-color: #04045b;
+}
+
+.twitter-link{
+    background-color: #0bb6ef;
+}
